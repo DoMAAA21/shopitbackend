@@ -14,11 +14,13 @@ const cors = require('cors');
 
 
 app.use(cors({
-  origin: "https://shopitbyjharold.onrender.com",
+  // origin: "https://shopitbyjharold.onrender.com",
+
+  origin: "https://localhost:3000",
   credentials: true}));
 
 
-  
+
 app.use(
     bodyParser.urlencoded({
       extended: true,
